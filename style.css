@@ -61,7 +61,7 @@
 }
 
 /*Keyboard*/
-.numbers {
+.keyboard {
     display: grid;
 
     grid-template-columns: 80px 80px 80px 80px;
