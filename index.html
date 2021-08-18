@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/12c29c871e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <title>Calculator</title>
@@ -14,30 +15,38 @@
     <main>
         <div class="calcBody">
             <div class="screen">
-
+                <div class="topScreen">
+                    <p class="topP">123456789</p>
+                </div>
+                <div class="downScreen">
+                    <p class="downP">123456789</p>
+                </div>
             </div>
-            <div class="numbers">
-                <button>0</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
+            <div class="keyboard">
+                <div class="numberOperatorsBtn">
+                    <div class="numbers">
+                        <button class="clearBtn">CLEAR</button>
+                <button class="backBtn"><i class="fas fa-backspace"></i></button>
+                        <button class="keyBtn numpad">7</button>
+                        <button class="keyBtn numpad">8</button>
+                        <button class="keyBtn numpad">9</button>
+                        <button class="keyBtn edit">+</button>
+                        <button class="keyBtn numpad">4</button>
+                        <button class="keyBtn numpad">5</button>
+                        <button class="keyBtn numpad">6</button>
+                        <button class="keyBtn edit">-</button>
+                        <button class="keyBtn numpad">1</button>
+                        <button class="keyBtn numpad">2</button>
+                        <button class="keyBtn numpad">3</button>
+                        <button class="keyBtn edit">*</button>
+                        <button class="keyBtn edit">.</button>
+                        <button class="keyBtn numpad">0</button>
+                        <button class="keyBtn edit">=</button>
+                        <button class="keyBtn edit">÷</button>
+                    </div>
+                </div>
             </div>
-            <div class="operators">
-                <button>+</button>
-                <button>-</button>
-                <button>*</button>
-                <button>/</button>
-            </div>
-            <div class="editBtns">
-                <button>Clear</button>
-                <button>=</button>
-            </div>
+            
         </div>
     </main>
 
