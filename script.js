@@ -1,4 +1,4 @@
-//basic math functions
+//BASIC MATH FUNCTIONS
 function add(a, b) {
     return a+b;
 }
@@ -34,4 +34,31 @@ function operate(operator, a, b) {
             return "Operação inválida"
         }
     }
+}
+
+//DISPLAY NUMBERS
+const button = document.querySelectorAll(".numpad");
+const topScreen = document.querySelector(".topScreen");
+const topP = document.querySelector(".topP");
+
+button.forEach((btn) => btn.addEventListener('click', displayP));
+
+function displayP(e) {
+    e.preventDefault();
+    const num = document.createElement('p');
+    num.className = 'topP';
+    num.innerHTML = `${e.target.value}`;
+    topScreen.appendChild(num);
+}
+
+//DISPLAY OPERATOR
+const operator = document.querySelectorAll(".op");
+operator.forEach((op) => op.addEventListener('click', displayOperator));
+
+function displayOperator(e) {
+    e.preventDefault();
+    const createOp = document.createElement('p');
+    createOp.className = 'topOperator';
+    createOp.innerHTML = `${e.target.value}`;
+    topScreen.appendChild(createOp);
 }
