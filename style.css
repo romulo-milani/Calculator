@@ -48,7 +48,8 @@
     border: 2px solid black;
     border-radius: 5px;
 
-    background-color: rgb(155, 155, 241);
+    background-color: rgb(156, 73, 73);
+    color: white;
     
 }
 .backBtn {
@@ -57,7 +58,8 @@
     border: 2px solid black;
     border-radius: 5px;
 
-    background-color: rgb(155, 155, 241);
+    background-color: rgb(146, 146, 84);
+    color: white;
 }
 
 /*Keyboard*/
@@ -80,15 +82,22 @@
     border-radius: 5px;
 }
 
-.numpad {
-    background-color:rgb(173, 236, 173);
+.op {
+    background-color: rgb(9, 122, 122);
+    color: white;
 }
 
-.edit {
-    background-color:rgb(173, 236, 173);
+.numpad {
+    background-color: rgb(90, 89, 89);
+    color: white;
+}
+
+.ed {
+    background-color: rgb(117, 115, 115);
+    color: white;
 }
 
 .clearBtn:hover, .keyBtn:hover, .backBtn:hover {
-    background-color:rgb(241, 77, 77);
-    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 5px 5px white;
+    transition: all 0.2s ease-in-out;
 }
