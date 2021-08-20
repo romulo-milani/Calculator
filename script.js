@@ -25,6 +25,7 @@ let storeOperator;
 let storePreviousNumber;
 const numpad = document.querySelectorAll(".numpad");
 const downScreen = document.querySelector(".downScreen");
+const topScreen = document.querySelector(".topScreen");
 
 const updateDisplay = (text) =>  {
     if (newNumber) {
@@ -41,6 +42,7 @@ const selectOperator = (event) => {
         newNumber = true;
         storeOperator = event.target.textContent;
         storePreviousNumber = parseFloat(downScreen.textContent);
+        topScreen.textContent =  downScreen.textContent + storeOperator;
     }
 }
 
@@ -58,6 +60,7 @@ const equals = document.querySelector('.equals');
 const callEquals = () => {
     operate();
     storeOperator = undefined;
+    topScreen.textContent =  '';
 }
 equals.addEventListener('click', callEquals);
 
@@ -68,6 +71,7 @@ const clearScreen = () => {
     storeOperator = undefined;
     newNumber = true;
     storePreviousNumber = undefined;
+    topScreen.textContent =  '';
 }
 
 clear.addEventListener('click', clearScreen);

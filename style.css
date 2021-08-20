@@ -23,6 +23,18 @@
     
 }
 
+.topScreen {
+    background-color: aqua;
+    flex: 1;
+    height: 10px;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 5px;
+}
+
 .downScreen {
     display: flex;
     justify-content: end;
@@ -30,7 +42,7 @@
     padding: 5px;
     overflow: hidden;
 
-    flex: 3;
+    flex: 2;
     font-size: 40px;
 }
 
@@ -118,3 +130,4 @@ i {
     height: 5rem;
     font-size: 20px;
 }
+
