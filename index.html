@@ -9,18 +9,11 @@
     <link rel="stylesheet" href="reset.css">
     <title >Calculator</title>
 </head>
-<body>
-    <header></header>
-    
+<body>    
     <main>
         <div class="calcBody">
             <div class="screen">
-                <div class="topScreen">
-                    <p class="topP">0</p>
-                </div>
-                <div class="downScreen">
-                    <p class="downP">0</p>
-                </div>
+                <div class="downScreen"></div>
             </div>
             <div class="keyboard">
                 <button class="clearBtn" value="clear">CLEAR</button>
@@ -37,15 +30,19 @@
                 <button class="keyBtn numpad" value="2">2</button>
                 <button class="keyBtn numpad" value="3">3</button>
                 <button class="keyBtn edit op" value="*">*</button>
-                <button class="keyBtn edit ed" value=".">.</button>
+                <button class="keyBtn edit ed dot" value=".">.</button>
                 <button class="keyBtn numpad" value="0">0</button>
-                <button class="keyBtn edit ed" value="=">=</button>
+                <button class="keyBtn edit ed equals" value="=">=</button>
                 <button class="keyBtn edit op" value="/">÷</button>
             </div>
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div id="div">
+            <h2>Rômulo Milani <a href="https://github.com/romulo-milani?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></h2>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
     
