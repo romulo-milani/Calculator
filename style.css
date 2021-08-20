@@ -24,7 +24,7 @@
 }
 
 .topScreen {
-    background-color: aqua;
+    background-color: rgb(194, 247, 247);
     flex: 1;
     height: 10px;
     font-size: 30px;
